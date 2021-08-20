@@ -1,0 +1,91 @@
+body{
+    background-color: #094d40;
+    font-family: 'Josefin Slab', serif;
+}
+.text-c {
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 5px 10px 10px black;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+}
+  .bi{
+      font-size: 5rem;
+  }
+  .efec1{
+    font: 700 4em/1 "Oswald", sans-serif;
+    letter-spacing: 0;
+    padding: 0.25em 0 0.325em;
+    display: block;
+    margin: 0 auto;
+    text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+    /* Clip Background Image */
+    background: url(https://www.publicdomainpictures.net/pictures/40000/velka/green-stripes-background.jpg) repeat-y;
+    -webkit-background-clip: text;
+    background-clip: text;
+    /* Animate Background Image */
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: aitf 80s linear infinite;
+    /* Activate hardware acceleration for smoother animations */
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+
+  }
+  @-webkit-keyframes aitf {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+  
+  @-webkit-keyframes drawIn {
+    0% {
+      stroke: transparent;
+      stroke-dashoffset: 10000;
+    }
+    75% {
+      stroke: white;
+    }
+  }
+  @keyframes drawIn {
+    0% {
+      stroke: transparent;
+      stroke-dashoffset: 10000;
+    }
+    75% {
+      stroke: white;
+    }
+  }
+  .mask-path {
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: aitf 80s linear infinite;
+  }
+  
+.main-text{
+    font-size: 2rem;
+    color: white;
+}
+
+.wrap .bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: url("https://fondosmil.com/fondo/73094.jpg") no-repeat center center;
+  background-size: cover;
+  transform: scale(1.1);
+}
